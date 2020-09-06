@@ -99,7 +99,6 @@ $(document).ready(function(){
     let userRange = parseInt($("input#userNumber").val());
     const userRange1 = userRange;
 
-debugger
     (loop(Range(userRange1)));
     (replace(Range(userRange1)));
 
