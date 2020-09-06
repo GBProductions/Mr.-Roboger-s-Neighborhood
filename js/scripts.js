@@ -62,6 +62,7 @@ Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep! Bee
 
 
 
+
 //UI LOGI
 
 $(document).ready(function(){
@@ -89,6 +90,8 @@ $(document).ready(function(){
       newArray.push(results[i].toString())
     }
     } 
+
+    
 
     const finalString = newArray.join("");
   $(".result").text(finalString);

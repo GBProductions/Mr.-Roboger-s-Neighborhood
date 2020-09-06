@@ -70,9 +70,7 @@ Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep! Bee
 
 ## Known Bugs
 
-_Returning arrays having issues. Errors not being able to read "includes" function._
-
-_
+_No known errors at this time._
 
 ## Support and contact details
 
