@@ -83,7 +83,7 @@ function replace(){
       newArray.push([i].toString())
       } 
     }
-    return finalString = newArray.join("") 
+    return finalString = newArray.join(" ") 
 };
 
 
@@ -96,8 +96,8 @@ $(document).ready(function(){
   $("form#form").submit(function(event) {
     event.preventDefault();
 
-    let userRange = parseInt($("input#userNumber").val());
-    const userRange1 = userRange;
+    let userRange1 = parseInt($("input#userNumber").val());
+    
 
     (loop(Range(userRange1)));
     (replace(Range(userRange1)));
