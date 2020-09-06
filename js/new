@@ -1,0 +1,42 @@
+function Counter() {
+  this.userRange = [],
+  this.currentId = 0
+}
+
+Counter.prototype.make = function() {
+  for (let i = 0; i <= userRange; i ++) {
+  results.push(i + (" "))};
+}
+
+Counter.prototype.loop = function() {
+  for (let i = 0; i <= userRange; i ++) {
+    if (results[i].toString().includes(3)) {
+    newArray.push(" Won't you be my neighbor? ")
+    } else if (results[i].toString().includes(2)) {
+    newArray.push(" Boop! ")
+    } else if (results[i].toString().includes(1)) {
+    newArray.push(" Beep" )
+    } else {
+    newArray.push(results[i].toString())
+    }
+  } 
+}
+
+
+//UI LOGI
+
+$(document).ready(function(){
+  $("form#form").submit(function(event) {
+    event.preventDefault();
+
+    let userRange = parseInt($("input#userNumber").val());
+    const newArray = [];
+    const results = [];
+
+    Counter.make(userRange);
+    const finalString = newArray.join("");
+
+  $(".result").text(finalString);
+  $("#result").show();
+  });
+});
