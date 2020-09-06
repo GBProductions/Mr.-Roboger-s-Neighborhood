@@ -1,6 +1,8 @@
 # _Mr. Roboger's Neighborhood_
 
-#### _Mr. Roboger's wants to welcome you to his neighborhood! The user types a number and a range of 0-the number inputed is returned. When certain numbers return though, they have been relplaced by certain phrases. , Sept. 3rd 2020_
+#### _Mr. Roboger's wants to welcome you to his neighborhood! The user types a number and a range of 0-the number inputed is returned. When certain numbers return though, they have been relplaced by certain phrases._
+
+#### _Sept. 5th 2020_
 
 #### By _**Garrett Brown**_
 
