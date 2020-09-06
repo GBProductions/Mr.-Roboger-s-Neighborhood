@@ -2,11 +2,23 @@
 
 #### _Mr. Roboger's wants to welcome you to his neighborhood! The user types a number and a range of 0-the number inputed is returned. When certain numbers return though, they have been relplaced by certain phrases._
 
-#### _Sept. 5th 2020_
+#### _Sept. 6th 2020_
 
 #### By _**Garrett Brown**_
 
 ## Description
+
+In this program, you can enter in any number, and the program will show an array that ranges from 0 (zero) to that number. 
+
+However, the program has some exceptions:
+1. It will first replace any number that contains the digit 1 (one) with the phrase "Beep!"
+2. Any number with the digit 2 (two) will be replaced with the phrase "Boop!"
+3. Any number with the digit 3 (three) will be replaced with the phrase "Won't you be my neighbor?"
+
+The program also has a hierarchy: the highest number has priority as a rule: so for instance, the number 13 (thirteen) has a 1 and a 3 in it. Since 3 is higher than one, 13 is replaced with "Won't you be my neighbor?"
+
+Below are some expected tests and logic.
+
 
 Business Logic
 
@@ -62,7 +74,7 @@ Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep! Bee
 
 ## Setup/Installation Requirements
 
-* _Clone the "Programming-Language-Selector" repository from Github._
+* _Clone the "Mr.-Roboger-s-Neighborhood" repository from Github._
 * _Navigate to the root directory of the project in the terminal and type 'open index.html' to view project in a browser._
 * _Open the project in text editor to view code._
 
