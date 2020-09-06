@@ -58,8 +58,31 @@ Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep! Bee
 
 //BUSINESS LOGIC
 
+function loop() {
+  let results = [];
+  for (let i = 0; i <= userRange; i ++) {
+    results.push(i + (" "))
+  }
+};
 
+function replace(){
+  const newArray = [];
+  for (let i = 0; i <= userRange; i ++) {
+    if (results[i].toString().includes(3)) {
+    newArray.push(" Won't you be my neighbor? ")
+    } else if (results[i].toString().includes(2)) {
+    newArray.push(" Boop! ")
+    } else if (results[i].toString().includes(1)) {
+    newArray.push(" Beep" )
+    } else {
+    newArray.push(results[i].toString())
+    }
+  }
+};
 
+function Range(userRange) {
+  this.userRange = userRange
+}
 
 
 
@@ -71,25 +94,13 @@ $(document).ready(function(){
     event.preventDefault();
 
     let userRange = parseInt($("input#userNumber").val());
-    const newArray = [];
-    const results = [];
+    const userRange1 = userRange;
 
-    for (let i = 0; i <= userRange; i ++) {
-      results.push(i + (" "))};
-    
-    
-    
-      for (let i = 0; i <= userRange; i ++) {
-        if (results[i].toString().includes(3)) {
-        newArray.push(" Won't you be my neighbor? ")
-        } else if (results[i].toString().includes(2)) {
-        newArray.push(" Boop! ")
-        } else if (results[i].toString().includes(1)) {
-        newArray.push(" Beep" )
-        } else {
-        newArray.push(results[i].toString())
-        }
-      } 
+debugger
+    alert(loop(userRange1));
+    alert(replace(userRange1));
+
+
 
     const finalString = newArray.join("");
 
