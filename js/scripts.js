@@ -59,6 +59,7 @@ Output: "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep! Bee
 //BUSINESS LOGIC
 
 
+
 //UI LOGI
 
 $(document).ready(function(){
@@ -67,29 +68,30 @@ $(document).ready(function(){
 
     let userRange1 = parseInt($("input#userNumber").val());
 
-    let newArray = [];
+    let newArray = [" "];
     const results = [];
     const userRange = userRange1
 
+
     for (let i = 0; i <= userRange; i ++) {
       results.push(i)};
-    
+
     for (let i = 0; i <= userRange; i ++) {
       if (results[i].toString().includes(3)) {
-        newArray.push(" Won't you be my neighbor?")
-      } else if (results[i].toString().includes(2)) {
-        newArray.push(" Boop!")
-      } else if (results[i].toString().includes(1)) {
-        newArray.push(" Beep")
-      } else {
-        newArray.push(results[i].toString())
-      }
-    } 
-    
-    
+      newArray.push(" Won't you be my neighbor? ")
+    } else if (results[i].toString().includes(2)) {
+      newArray.push(" Boop! ")
+    } else if (results[i].toString().includes(1)) {
+      newArray.push(" Beep" )
+    } else {
+      newArray.push(results[i].toString())
+    }
+  } 
+
+
     const finalString = newArray.join("");
 
-  $(".result").text(finalString);
+  $(".result").text(" " + finalString + " ");
   $("#result").show();
   });
 });
