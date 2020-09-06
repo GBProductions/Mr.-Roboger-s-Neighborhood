@@ -1,3 +1,7 @@
 .result {
   display: none;
 }
+
+body {
+  background-color: rgba(17, 134, 202, 0.26);
+}
